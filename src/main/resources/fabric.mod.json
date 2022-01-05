@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "evolution",
+  "version": "${version}",
+
+  "name": "Evolution",
+  "description": "Open source Evolution mod for Minecraft 1.18. Continuously integrated using an automatic updating mod.",
+  "contact": {
+    "sources": "https://github.com/OpenEvolution/Evolution"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/evolution/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.openevolutionmc.evolution.EvolutionClient"
+    ],
+    "server": [
+      "com.openevolutionmc.evolution.EvolutionServer"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  }
+}
